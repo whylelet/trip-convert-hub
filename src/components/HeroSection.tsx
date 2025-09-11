@@ -43,7 +43,7 @@ export const HeroSection = () => {
           <Button 
             variant="outline" 
             size="lg" 
-            className="text-lg px-8 py-4 h-auto border-white/30 text-white hover:bg-white/10"
+            className="text-lg px-8 py-4 h-auto border-accent/80 bg-accent/20 text-white hover:bg-accent/30 hover:border-accent shadow-medium backdrop-blur-sm"
             onClick={() => document.getElementById('benefits')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Por Que Escolher Uma Agência?

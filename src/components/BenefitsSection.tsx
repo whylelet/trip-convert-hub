@@ -24,15 +24,15 @@ export const BenefitsSection = () => {
   ];
 
   return (
-    <section id="benefits" className="py-20 px-6">
+    <section id="benefits" className="py-20 px-6 bg-gradient-to-br from-secondary/30 via-accent-light/10 to-primary-light/20">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in">
             Por Que Escolher Uma Agência?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Viajar por conta própria pode parecer mais barato, mas os riscos e complicações 
-            podem transformar seu sonho em pesadelo. Veja como cuidamos de você:
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in">
+            Não somos apenas uma agência. Somos seus parceiros de confiança para transformar seus sonhos em realidade, 
+            cuidando de cada detalhe da sua jornada com expertise e dedicação.
           </p>
         </div>
 
@@ -42,14 +42,15 @@ export const BenefitsSection = () => {
             return (
               <Card 
                 key={index} 
-                className="relative overflow-hidden border-0 shadow-medium hover:shadow-strong transition-all duration-300 group"
+                className="relative overflow-hidden border-2 border-accent/20 hover:border-accent/40 shadow-medium hover:shadow-strong transition-all duration-500 group hover:scale-105 animate-fade-in bg-white/90 backdrop-blur-sm"
+                style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${benefit.gradient} opacity-5 group-hover:opacity-10 transition-opacity`} />
+                <div className={`absolute inset-0 bg-gradient-to-br ${benefit.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
                 <CardContent className="relative p-8 text-center">
-                  <div className={`inline-flex p-4 rounded-full bg-gradient-to-br ${benefit.gradient} mb-6`}>
+                  <div className={`inline-flex p-4 rounded-full bg-gradient-to-br ${benefit.gradient} mb-6 group-hover:scale-110 transition-transform duration-300`}>
                     <Icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-4">
+                  <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
                     {benefit.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">

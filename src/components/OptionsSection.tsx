@@ -39,40 +39,44 @@ export const OptionsSection = () => {
   ];
 
   return (
-    <section id="options" className="py-20 px-6 bg-muted/30">
+    <section id="options" className="py-20 px-6 bg-gradient-to-br from-primary/5 via-accent/5 to-primary-light/10">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in">
             Escolha a Melhor Opção Para Você
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Diferentes perfis, diferentes necessidades. Encontre a forma ideal de planejar sua próxima aventura:
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in">
+            Diferentes necessidades, diferentes soluções. Encontre a opção perfeita para planejar sua próxima aventura.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
           {options.map((option, index) => {
             const Icon = option.icon;
             return (
               <Card 
                 key={index}
-                className="relative group hover:shadow-medium transition-all duration-300 border-0 shadow-soft bg-card/80 backdrop-blur-sm"
+                className="group p-6 hover:shadow-strong transition-all duration-500 border-2 border-accent/20 hover:border-accent/40 hover:scale-105 animate-fade-in bg-white/90 backdrop-blur-sm"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <CardHeader className="text-center pb-4">
-                  <div className="inline-flex p-3 rounded-full bg-primary/10 mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                    <Icon className="w-6 h-6 text-primary" />
+                <CardContent className="p-0">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-14 h-14 rounded-xl bg-gradient-sunset flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Icon className="w-7 h-7 text-white" />
+                    </div>
+                    <div className="flex-1 text-left">
+                      <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                        {option.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        {option.description}
+                      </p>
+                    </div>
                   </div>
-                  <CardTitle className="text-xl font-bold text-foreground">
-                    {option.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
-                    {option.description}
-                  </p>
+                  
                   <Button 
                     variant={option.buttonVariant}
-                    className="w-full"
+                    className="w-full hover:scale-105 transition-transform duration-200"
                     onClick={option.action}
                   >
                     {option.buttonText}
@@ -83,18 +87,20 @@ export const OptionsSection = () => {
           })}
         </div>
 
-        <div className="text-center mt-12">
-          <p className="text-muted-foreground mb-4">
-            Ainda tem dúvidas sobre qual opção escolher?
+        <Card className="p-8 bg-gradient-hero text-white border-2 border-accent/30 shadow-strong animate-fade-in">
+          <h3 className="text-2xl font-bold mb-4">Ainda está em dúvida?</h3>
+          <p className="text-white/90 mb-6 text-lg">
+            Converse conosco! Nossa equipe de especialistas está pronta para te ajudar a encontrar a opção perfeita.
           </p>
           <Button 
-            variant="outline" 
+            variant="sunset" 
             size="lg"
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            className="text-lg px-8 py-4 h-auto hover:scale-105 transition-transform duration-200"
+            onClick={() => window.open("https://wa.me/+556130818220", "_blank")}
           >
-            Deixe Seus Dados - Nós Te Ajudamos
+            Falar com Especialista Agora
           </Button>
-        </div>
+        </Card>
       </div>
     </section>
   );
