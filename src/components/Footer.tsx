@@ -11,7 +11,10 @@ export const Footer = () => {
               DW Viagens
             </h3>
             <p className="text-white/80 mb-4">
-              Transformando sonhos em experiências inesquecíveis há mais de 10 anos.
+              Sua tranquilidade é a nossa preocupação
+            </p>
+            <p className="text-white/60 text-sm">
+              Transformando sonhos em experiências inesquecíveis há 8 anos.
             </p>
           </div>
 
@@ -21,15 +24,17 @@ export const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-accent" />
-                <span className="text-white/80">(11) 9999-9999</span>
+                <span className="text-white/80">+55 61 3081-8220</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-accent" />
-                <span className="text-white/80">contato@agencia.com.br</span>
+                <span className="text-white/80">contato@dwviagens.com.br</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-accent" />
-                <span className="text-white/80">São Paulo, SP</span>
+                <a href="https://dwviagens.com.br/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                  dwviagens.com.br
+                </a>
               </div>
             </div>
           </div>
@@ -42,14 +47,21 @@ export const Footer = () => {
                 <Clock className="w-5 h-5 text-accent" />
                 <div>
                   <p className="text-white/80">Segunda à Sexta</p>
-                  <p className="text-sm text-white/60">8h às 18h</p>
+                  <p className="text-sm text-white/60">09:00 - 19:00</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <Clock className="w-5 h-5 text-accent opacity-70" />
+                <div>
+                  <p className="text-white/80">Sábado</p>
+                  <p className="text-sm text-white/60">09:00 - 13:00</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-accent opacity-50" />
                 <div>
-                  <p className="text-white/80">Sábados</p>
-                  <p className="text-sm text-white/60">8h às 14h</p>
+                  <p className="text-white/80">Domingo</p>
+                  <p className="text-sm text-white/60">Fechada</p>
                 </div>
               </div>
             </div>
