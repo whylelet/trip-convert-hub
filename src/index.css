@@ -17,18 +17,18 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 27%;
 
-    /* Travel-inspired color palette */
-    --primary: 200 100% 40%; /* Ocean blue */
+    /* DW Viagens color palette */
+    --primary: 210 68% 31%; /* DW Blue #1A2D6C */
     --primary-foreground: 0 0% 100%;
-    --primary-light: 200 100% 85%;
-    --primary-dark: 200 100% 25%;
+    --primary-light: 210 58% 54%; /* Lighter blue #284796 */
+    --primary-dark: 210 75% 20%; /* Darker blue */
 
-    --secondary: 180 25% 95%; /* Soft mint */
-    --secondary-foreground: 215 25% 27%;
+    --secondary: 210 45% 92%; /* Light blue background */
+    --secondary-foreground: 210 68% 31%;
 
-    --accent: 45 100% 60%; /* Golden sand */
-    --accent-foreground: 215 25% 27%;
-    --accent-light: 45 100% 85%;
+    --accent: 18 100% 50%; /* DW Orange #FF5D00 */
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 18 100% 85%;
 
     --success: 150 60% 50%; /* Tropical green */
     --success-foreground: 0 0% 100%;
@@ -44,15 +44,15 @@ All colors MUST be HSL.
     --ring: 200 100% 40%;
 
     /* Gradients */
-    --gradient-ocean: linear-gradient(135deg, hsl(200 100% 40%), hsl(180 100% 35%));
-    --gradient-sunset: linear-gradient(135deg, hsl(45 100% 60%), hsl(25 100% 55%));
-    --gradient-hero: linear-gradient(135deg, hsl(200 100% 40%) 0%, hsl(180 100% 35%) 50%, hsl(45 100% 60%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(200 50% 98%));
+    --gradient-ocean: linear-gradient(135deg, hsl(210 68% 31%), hsl(210 58% 54%));
+    --gradient-sunset: linear-gradient(135deg, hsl(18 100% 50%), hsl(18 100% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 68% 31%) 0%, hsl(210 58% 54%) 50%, hsl(18 100% 50%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 50% 98%));
 
     /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(200 100% 40% / 0.15);
-    --shadow-medium: 0 8px 30px -8px hsl(200 100% 40% / 0.25);
-    --shadow-strong: 0 20px 50px -12px hsl(200 100% 40% / 0.35);
+    --shadow-soft: 0 4px 20px -4px hsl(210 68% 31% / 0.15);
+    --shadow-medium: 0 8px 30px -8px hsl(210 68% 31% / 0.25);
+    --shadow-strong: 0 20px 50px -12px hsl(210 68% 31% / 0.35);
 
     --radius: 0.75rem;
 

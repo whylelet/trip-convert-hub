@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-beach.jpg";
+import { DWLogo } from "./DWLogo";
 
 export const HeroSection = () => {
   return (
@@ -15,6 +16,9 @@ export const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
+        <div className="mb-8">
+          <DWLogo className="mx-auto mb-6" />
+        </div>
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
           Transforme seus
           <span className="block bg-gradient-sunset bg-clip-text text-transparent">

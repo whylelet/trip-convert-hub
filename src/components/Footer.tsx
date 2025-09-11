@@ -8,7 +8,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div>
             <h3 className="text-2xl font-bold mb-4 bg-gradient-sunset bg-clip-text text-transparent">
-              Sua Agência de Viagens
+              DW Viagens
             </h3>
             <p className="text-white/80 mb-4">
               Transformando sonhos em experiências inesquecíveis há mais de 10 anos.
@@ -58,7 +58,7 @@ export const Footer = () => {
 
         <div className="border-t border-white/20 pt-8 text-center">
           <p className="text-white/60">
-            © 2024 Sua Agência de Viagens. Todos os direitos reservados.
+            © 2024 DW Viagens. Todos os direitos reservados.
           </p>
         </div>
       </div>
