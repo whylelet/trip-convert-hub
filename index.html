@@ -1,28 +1,431 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agência de Viagens | Transforme Seus Sonhos em Viagens Inesquecíveis</title>
-    <meta name="description" content="Agência de viagens especializada em criar experiências únicas. Segurança, suporte 24h e atendimento personalizado. Planeje sua próxima aventura conosco!" />
-    <meta name="keywords" content="agência de viagens, pacotes de viagem, turismo, viagens personalizadas, ofertas de viagem" />
-    <meta name="author" content="Sua Agência de Viagens" />
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DW Viagens - Transforme seus Sonhos em Viagens</title>
+    <meta name="description" content="Mais que uma agência, somos seus companheiros de jornada. Cuidamos de cada detalhe para que você viva experiências inesquecíveis com 8 anos de mercado.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-background">
+            <img src="src/assets/hero-beach.jpg" alt="Praia paradisíaca" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="dw-logo">
+                <svg class="plane-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m2 2 20 20"/>
+                    <path d="m9 9 5 5"/>
+                    <path d="m21 3h-7l-4 4h-7l4 4h7l4-4v7z"/>
+                </svg>
+                <span class="logo-text">DW Viagens</span>
+            </div>
+            
+            <h1 class="hero-title">
+                Transforme seus
+                <span class="hero-title-accent">Sonhos em Viagens</span>
+            </h1>
+            
+            <p class="hero-description">
+                Mais que uma agência, somos seus companheiros de jornada. 
+                Cuidamos de cada detalhe para que você viva experiências inesquecíveis.
+            </p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-hero" onclick="scrollToSection('options')">
+                    Planejar Minha Viagem
+                </button>
+                <button class="btn btn-outline" onclick="scrollToSection('benefits')">
+                    Por Que Escolher Uma Agência?
+                </button>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
 
-    <meta property="og:title" content="Agência de Viagens | Transforme Seus Sonhos em Viagens Inesquecíveis" />
-    <meta property="og:description" content="Mais que uma agência, somos seus companheiros de jornada. Segurança, especialistas e suporte completo para suas viagens." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/hero-preview.jpg" />
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Por Que Escolher Uma Agência?</h2>
+                <p class="section-description">
+                    Não somos apenas uma agência. Somos seus parceiros de confiança para transformar seus sonhos em realidade, 
+                    cuidando de cada detalhe da sua jornada com expertise e dedicação.
+                </p>
+            </div>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Agência de Viagens | Viagens Inesquecíveis" />
-    <meta name="twitter:description" content="Transforme seus sonhos em viagens com segurança e suporte completo." />
-    <meta name="twitter:image" content="/hero-preview.jpg" />
-    
-    <link rel="canonical" href="https://sua-agencia.com.br" />
-  </head>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-delay="0">
+                    <div class="benefit-overlay"></div>
+                    <div class="benefit-content">
+                        <div class="benefit-icon benefit-icon-security">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
+                                <path d="m9 12 2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="benefit-title">Segurança em Cada Detalhe</h3>
+                        <p class="benefit-description">
+                            Imprevistos acontecem, mas com nossa experiência você tem o suporte necessário para resolver qualquer situação, desde cancelamentos até emergências no destino.
+                        </p>
+                    </div>
+                </div>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+                <div class="benefit-card" data-delay="0.2">
+                    <div class="benefit-overlay benefit-overlay-success"></div>
+                    <div class="benefit-content">
+                        <div class="benefit-icon benefit-icon-success">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="m22 21-3-3m0 0-3-3m3 3 3-3m-3 3-3 3"/>
+                            </svg>
+                        </div>
+                        <h3 class="benefit-title">Especialistas ao Seu Lado</h3>
+                        <p class="benefit-description">
+                            Nossa equipe te acompanha desde o primeiro contato até o retorno da viagem. Orientação sobre documentação, dicas de bagagem e suporte 24h.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="benefit-card" data-delay="0.4">
+                    <div class="benefit-overlay benefit-overlay-accent"></div>
+                    <div class="benefit-content">
+                        <div class="benefit-icon benefit-icon-accent">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <pin d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <h3 class="benefit-title">Muito Além da Compra</h3>
+                        <p class="benefit-description">
+                            Não vendemos apenas passagens. Criamos experiências personalizadas, cuidamos dos detalhes burocráticos e te orientamos sobre cada aspecto da sua jornada.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Options Section -->
+    <section id="options" class="options-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Escolha a Melhor Opção Para Você</h2>
+                <p class="section-description">
+                    Diferentes necessidades, diferentes soluções. Encontre a opção perfeita para planejar sua próxima aventura.
+                </p>
+            </div>
+
+            <div class="options-grid">
+                <div class="option-card" data-delay="0">
+                    <div class="option-content">
+                        <div class="option-header">
+                            <div class="option-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="m21 21-4.35-4.35"/>
+                                </svg>
+                            </div>
+                            <div class="option-info">
+                                <h3 class="option-title">Cotação Personalizada</h3>
+                                <p class="option-description">
+                                    Acesse nosso site e faça sua própria cotação escolhendo destino e datas
+                                </p>
+                            </div>
+                        </div>
+                        <button class="btn btn-hero option-button" onclick="window.open('#', '_blank')">
+                            Fazer Cotação
+                        </button>
+                    </div>
+                </div>
+
+                <div class="option-card" data-delay="0.1">
+                    <div class="option-content">
+                        <div class="option-header">
+                            <div class="option-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 12l2 2 4-4"/>
+                                    <path d="M21 12c-1.2 0-3-.6-3-3s1.8-3 3-3 3 .6 3 3-1.8 3-3 3"/>
+                                    <path d="M3 12c1.2 0 3-.6 3-3s-1.8-3-3-3-3 .6-3 3 1.8 3 3 3"/>
+                                    <path d="M15 21H9a6 6 0 1 1 0-12h6a6 6 0 1 1 0 12z"/>
+                                </svg>
+                            </div>
+                            <div class="option-info">
+                                <h3 class="option-title">Ofertas Específicas</h3>
+                                <p class="option-description">
+                                    Veja as promoções exclusivas que trouxeram você até aqui
+                                </p>
+                            </div>
+                        </div>
+                        <button class="btn btn-sunset option-button" onclick="window.open('#', '_blank')">
+                            Ver Ofertas
+                        </button>
+                    </div>
+                </div>
+
+                <div class="option-card" data-delay="0.2">
+                    <div class="option-content">
+                        <div class="option-header">
+                            <div class="option-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 8a6 6 0 0 1 12 0c0 7-3 9-6 9s-6-2-6-9"/>
+                                    <path d="m9 9h6"/>
+                                </svg>
+                            </div>
+                            <div class="option-info">
+                                <h3 class="option-title">Grupo de Promoções</h3>
+                                <p class="option-description">
+                                    Junte-se ao nosso grupo e receba primeiro as melhores ofertas
+                                </p>
+                            </div>
+                        </div>
+                        <button class="btn btn-success option-button" onclick="window.open('#', '_blank')">
+                            Entrar no Grupo
+                        </button>
+                    </div>
+                </div>
+
+                <div class="option-card" data-delay="0.3">
+                    <div class="option-content">
+                        <div class="option-header">
+                            <div class="option-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                            </div>
+                            <div class="option-info">
+                                <h3 class="option-title">Atendimento VIP</h3>
+                                <p class="option-description">
+                                    Fale com um especialista e personalize sua viagem completamente
+                                </p>
+                            </div>
+                        </div>
+                        <button class="btn btn-default option-button" onclick="window.open('https://wa.me/+556130818220', '_blank')">
+                            Falar com Especialista
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-card">
+                <h3 class="cta-title">Ainda está em dúvida?</h3>
+                <p class="cta-description">
+                    Converse conosco! Nossa equipe de especialistas está pronta para te ajudar a encontrar a opção perfeita.
+                </p>
+                <button class="btn btn-sunset btn-lg cta-button" onclick="window.open('https://wa.me/+556130818220', '_blank')">
+                    Falar com Especialista Agora
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture Section -->
+    <section id="contact" class="lead-capture-section">
+        <div class="lead-background"></div>
+        <div class="container">
+            <div class="lead-card">
+                <div class="lead-header">
+                    <h2 class="lead-title">Receba Nossas Melhores Ofertas</h2>
+                    <p class="lead-description">
+                        Deixe seus dados e seja o primeiro a saber das promoções exclusivas para seus destinos favoritos
+                    </p>
+                </div>
+                
+                <form id="leadForm" class="lead-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-input-wrapper">
+                                <svg class="form-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                                <input type="text" id="name" name="name" placeholder="Seu nome completo *" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-input-wrapper">
+                                <svg class="form-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                <input type="email" id="email" name="email" placeholder="Seu melhor e-mail *" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-input-wrapper">
+                                <svg class="form-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                                <input type="tel" id="phone" name="phone" placeholder="WhatsApp (opcional)">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-input-wrapper">
+                                <svg class="form-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <input type="text" id="originCity" name="originCity" placeholder="Sua cidade de origem">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-section-header">
+                            <svg class="form-section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <h3>Destinos que te interessam (escolha quantos quiser):</h3>
+                        </div>
+                        
+                        <div class="checkbox-grid" id="destinationsGrid">
+                            <!-- Destinations will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-section-header">
+                            <svg class="form-section-icon form-section-icon-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <h3>Que tipo de viagem te interessa?</h3>
+                        </div>
+                        
+                        <div class="checkbox-grid checkbox-grid-interests" id="interestsGrid">
+                            <!-- Interests will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-hero btn-lg form-submit">
+                        Quero Receber as Ofertas Exclusivas
+                    </button>
+                    
+                    <p class="form-note">
+                        * Campos obrigatórios. Não compartilhamos seus dados com terceiros.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="dw-logo footer-logo">
+                            <svg class="plane-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m2 2 20 20"/>
+                                <path d="m9 9 5 5"/>
+                                <path d="m21 3h-7l-4 4h-7l4 4h7l4-4v7z"/>
+                            </svg>
+                            <span class="logo-text">DW Viagens</span>
+                        </div>
+                        <p class="footer-slogan">
+                            "Sua tranquilidade é a nossa preocupação"
+                        </p>
+                        <p class="footer-experience">
+                            Transformando sonhos em realidade há 8 anos
+                        </p>
+                    </div>
+
+                    <div class="footer-contact">
+                        <h3 class="footer-title">Fale Conosco</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                                <span>+55 61 3081-8220</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                <span>contato@dwviagens.com.br</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M2 12h20"/>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                </svg>
+                                <a href="https://dwviagens.com.br/" target="_blank">dwviagens.com.br</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-hours">
+                        <h3 class="footer-title">Horário de Funcionamento</h3>
+                        <div class="hours-info">
+                            <div class="hour-item">
+                                <svg class="hour-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                <div class="hour-details">
+                                    <span class="hour-days">Segunda - Sexta</span>
+                                    <span class="hour-time">09:00 - 19:00</span>
+                                </div>
+                            </div>
+                            <div class="hour-item">
+                                <svg class="hour-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                <div class="hour-details">
+                                    <span class="hour-days">Sábado</span>
+                                    <span class="hour-time">09:00 - 13:00</span>
+                                </div>
+                            </div>
+                            <div class="hour-item">
+                                <svg class="hour-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                <div class="hour-details">
+                                    <span class="hour-days">Domingo</span>
+                                    <span class="hour-time">Fechada</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2024 DW Viagens. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div id="toastMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
