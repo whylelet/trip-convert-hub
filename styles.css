@@ -61,6 +61,30 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Secondary page adjustments for top/bottom bars */
+.secondary-page {
+    padding-top: 60px; /* Space for top bar */
+    padding-bottom: 80px; /* Space for bottom bar */
+    min-height: calc(100vh - 140px); /* Adjust total height */
+}
+
+/* Mobile adjustments for secondary page */
+@media (max-width: 768px) {
+    .secondary-page {
+        padding-top: 50px; /* Smaller top space on mobile */
+        padding-bottom: 60px; /* Smaller bottom space on mobile */
+    }
+    
+    .hero-section {
+        margin-top: -50px; /* Adjust for mobile top padding */
+        min-height: 70vh; /* Smaller hero on mobile */
+    }
+    
+    .footer {
+        margin-bottom: -60px; /* Adjust for mobile bottom padding */
+    }
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -126,14 +150,15 @@ body {
     }
 }
 
-/* Hero Section */
+/* Hero Section - Adjusted for secondary page */
 .hero-section {
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh; /* Reduced height for secondary page */
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-top: -60px; /* Compensate for body padding */
 }
 
 .hero-background {
@@ -343,9 +368,9 @@ body {
     height: auto;
 }
 
-/* Benefits Section */
+/* Benefits Section - Adjusted for secondary page */
 .benefits-section {
-    padding: 80px 0;
+    padding: 60px 0; /* Reduced padding */
     background: linear-gradient(135deg, hsl(var(--secondary) / 0.3), hsl(var(--accent-light) / 0.1), hsl(var(--primary-light) / 0.2));
 }
 
@@ -478,9 +503,9 @@ body {
     line-height: 1.6;
 }
 
-/* Options Section */
+/* Options Section - Adjusted for secondary page */
 .options-section {
-    padding: 80px 0;
+    padding: 60px 0; /* Reduced padding */
     background: linear-gradient(135deg, hsl(var(--primary) / 0.05), hsl(var(--accent) / 0.05), hsl(var(--primary-light) / 0.1));
 }
 
@@ -612,9 +637,9 @@ body {
     transform: scale(1.05);
 }
 
-/* Lead Capture Section */
+/* Lead Capture Section - Adjusted for secondary page */
 .lead-capture-section {
-    padding: 80px 0;
+    padding: 60px 0; /* Reduced padding */
     background: var(--gradient-hero);
     position: relative;
     overflow: hidden;
@@ -816,11 +841,12 @@ body {
     margin-top: 16px;
 }
 
-/* Footer */
+/* Footer - Adjusted for secondary page */
 .footer {
     background: hsl(var(--primary));
     color: hsl(var(--primary-foreground));
-    padding: 40px 0 20px;
+    padding: 32px 0 16px; /* Reduced padding */
+    margin-bottom: -80px; /* Compensate for body bottom padding */
 }
 
 .footer-content {
