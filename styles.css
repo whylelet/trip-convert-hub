@@ -132,6 +132,11 @@ body {
     height: 32px;
     color: hsl(var(--primary));
     transform: rotate(45deg);
+    stroke-width: 2;
+}
+
+.hero-content .plane-icon {
+    color: white;
 }
 
 .logo-text {
@@ -456,6 +461,8 @@ body {
 
 .benefit-icon {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 16px;
     border-radius: 50%;
     margin-bottom: 24px;
@@ -464,10 +471,12 @@ body {
     height: 64px;
 }
 
-.benefit-icon svg {
+.benefit-icon svg,
+.benefit-icon i {
     width: 32px;
     height: 32px;
     color: white;
+    stroke-width: 2;
 }
 
 .benefit-icon-security {
