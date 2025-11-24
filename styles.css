@@ -184,7 +184,7 @@ body {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, hsl(var(--primary) / 0.8), hsl(var(--primary) / 0.6), transparent);
+    background: linear-gradient(to right, hsl(var(--primary) / 0.85), hsl(var(--primary) / 0.7), hsl(var(--primary) / 0.4));
 }
 
 .hero-content {
@@ -206,6 +206,7 @@ body {
     font-weight: 700;
     margin-bottom: 24px;
     line-height: 1.1;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.9), 0 0 30px rgba(0, 0, 0, 0.7);
 }
 
 .hero-title-accent {
@@ -220,11 +221,13 @@ body {
 .hero-description {
     font-size: 1.25rem;
     margin-bottom: 32px;
-    color: rgba(255, 255, 255, 0.9);
+    color: white;
     max-width: 512px;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6);
+    font-weight: 500;
 }
 
 @media (min-width: 768px) {
@@ -463,20 +466,21 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 16px;
+    padding: 20px;
     border-radius: 50%;
     margin-bottom: 24px;
     transition: transform 0.3s ease;
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
+    box-shadow: var(--shadow-medium);
 }
 
 .benefit-icon svg,
 .benefit-icon i {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     color: white;
-    stroke-width: 2;
+    stroke-width: 2.5;
 }
 
 .benefit-icon-security {
