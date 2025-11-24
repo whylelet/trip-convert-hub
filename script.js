@@ -1,5 +1,12 @@
 // DW Viagens JavaScript
 
+// Initialize Lucide icons
+document.addEventListener('DOMContentLoaded', () => {
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
+});
+
 // Form data state
 let formData = {
     name: "",
