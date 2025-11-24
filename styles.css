@@ -211,11 +211,7 @@ body {
 
 .hero-title-accent {
     display: block;
-    background: var(--gradient-sunset);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
+    color: white;
 }
 
 .hero-description {
